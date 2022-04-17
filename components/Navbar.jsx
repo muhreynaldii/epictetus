@@ -15,7 +15,7 @@ function Navbar(){
                 <div className="w-10 bg-gray-500 rounded flex items-center justify-center mr-4 shadow-2xl">E</div>
                 epictetus
               </div>
-              <div className="w-8/12">
+              <div className="w-7/12">
                 <ul className="space-x-10 flex items-center">
                   <li><a href="" className="hover:underline">Ui Design</a></li>
                   <li><a href="" className="hover:underline">Front-End</a></li>
@@ -43,7 +43,7 @@ function Navbar(){
                   </li>
                 </ul>
               </div>
-              <div className="w-2/12">
+              <div className="w-3/12">
                 <input className="bg-gray-700 py-3 px-6 w-full rounded-full bg-search pl-12" placeholder="Search..."/>
               </div>
             </div>
