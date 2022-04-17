@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import Container from "@components/Container";
 
 function Navbar(){
   const [dropdown,setDropdown] = useState(false);
@@ -9,7 +10,7 @@ function Navbar(){
   ]
     return (
         <nav className="py-10">
-          <div className="mx-auto container">
+          <Container>
             <div className="flex items-center">
               <div className="w-2/12 flex items-center">
                 <div className="w-10 bg-gray-500 rounded flex items-center justify-center mr-4 shadow-2xl">E</div>
@@ -47,7 +48,7 @@ function Navbar(){
                 <input className="bg-gray-700 py-3 px-6 w-full rounded-full bg-search pl-12" placeholder="Search..."/>
               </div>
             </div>
-          </div>
+            </Container>
         </nav>
     )
 }
