@@ -1,9 +1,12 @@
 import InfoPost from "@components/InfoPost";
+import Link from "next/link";
 
 function CardPost({thumbnail, ...infoPost}){
     return(
         <article className="">
-            <img className="w-full rounded mb-4" src={thumbnail} alt="" />
+            <Link href="/detail">
+            <img className="w-full rounded mb-4 cursor-pointer" src={thumbnail} alt="" />
+            </Link>
             <InfoPost
             {...infoPost}
             />

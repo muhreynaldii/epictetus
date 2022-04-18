@@ -4,11 +4,15 @@ import Container from "@components/Container";
 import { useState } from "react";
 import Layout from "@components/Layout";
 import MockPosts from "../utils/posts.json"
+import Head from "next/head";
 
 export default function Home() {
   const [posts,setPost] = useState(MockPosts);
   return (
     <Layout>
+      <Head>
+        <title>Home &mdash; Epictetus</title>
+      </Head>
         <Container>
         <div className="container mx-auto">
           <FeaturedPost/>

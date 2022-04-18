@@ -2,10 +2,14 @@ import Container from "@components/Container";
 import Layout from "@components/Layout";
 import PostAuthor from "@components/PostAuthor";
 import PostMetaTitle from "@components/PostMetaTitle";
+import Head from "next/head";
 
 function Detail() {
     return(
         <Layout>
+          <Head>
+            <title>Detail &mdash; Epictetus</title>
+          </Head>
             <Container>
                 <div className="md:w-6/12 w-full mx-auto flex items-center flex-col ">
                  <PostMetaTitle
