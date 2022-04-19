@@ -1,9 +1,9 @@
 function Footer() {
-    return(
-        <footer className="text-white/60 text-center py-16">
-            Copyright (c) 2022
-        </footer>
-    )
+  return (
+    <footer className="py-16 text-center text-white/60">
+      Copyright (c) 2022
+    </footer>
+  );
 }
 
 export default Footer;

@@ -1,28 +1,28 @@
 import Container from "@components/Container";
 import CardPost from "@components/CardPost";
 import Layout from "@components/Layout";
-import MockPosts from "../utils/posts.json"
-import {useState} from 'react';
+import MockPosts from "../utils/posts.json";
+import { useState } from "react";
 import SectionHeader from "@components/SectionHeader";
 
 function SearchPosts() {
-    const [posts,setPost] = useState(MockPosts);
-    return(
-        <Layout>
-        <Container>
+  const [posts, setPost] = useState(MockPosts);
+  return (
+    <Layout>
+      <Container>
         <SectionHeader>Search: Ui Design</SectionHeader>
         <div className="container mx-auto">
-          <div className="flex -mx-4 flex-wrap mt-6">
-            {posts.map(post =>(
-            <div key={post.id} className="md:w-4/12 w-full px-4 py-6">
-              <CardPost {...post}/>
-            </div>
+          <div className="-mx-4 mt-6 flex flex-wrap">
+            {posts.map((post) => (
+              <div key={post.id} className="w-full px-4 py-6 md:w-4/12">
+                <CardPost {...post} />
+              </div>
             ))}
           </div>
         </div>
-        </Container>
-      </Layout>
-    )
+      </Container>
+    </Layout>
+  );
 }
 
 export default SearchPosts;
