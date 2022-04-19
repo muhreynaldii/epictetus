@@ -38,14 +38,14 @@ function Navbar() {
                   <path
                     d="M3 6H21"
                     stroke="white"
-                    stroke-z="2"
+                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
                   <path
                     d="M3 18H21"
                     stroke="white"
-                    stroke-z="2"
+                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
@@ -92,7 +92,7 @@ function Navbar() {
             </button>
           </div>
           <div
-            className={`fixed top-0 h-full w-full bg-gradient-to-b from-gray-600 to-gray-900 p-10 transition-all lg:static lg:h-auto lg:w-7/12 lg:bg-none lg:p-0 ${
+            className={`fixed top-0 z-10 h-full w-full bg-gradient-to-b from-gray-600 to-gray-900 p-10 transition-all lg:static lg:h-auto lg:w-7/12 lg:bg-none lg:p-0 ${
               offcanvas ? "left-0" : "-left-full"
             }`}
           >
