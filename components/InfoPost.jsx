@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import PostMetaTitle from "@components/PostMetaTitle";
-import PostAuthor from "./PostAuthor";
+import PostAuthor from "@components/PostAuthor";
 function InfoPost({
   category,
   date,
